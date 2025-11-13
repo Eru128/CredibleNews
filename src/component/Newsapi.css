@@ -1,0 +1,1060 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=McLaren&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tektur:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=McLaren&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tektur:wght@400..900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.ul--:hover{
+background-color: rgb(184, 184, 184);
+}
+
+.container---1{
+    max-width: 130rem;
+    height: 100vh;
+}
+
+.ul-title{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 8rem;
+    z-index: 4000;
+/* My own  */
+    position: fixed;
+    top:0;
+    width:100%;
+    background-color: #eee;
+    background-image: url("https://www.transparenttextures.com/patterns/gplay.png");
+    border-bottom: 1px solid black;
+    transition: all 0.9s ease-in-out;
+    
+}
+
+/* .sticky{
+    position: fixed;
+    top:0;
+    height:6rem;
+    z-index: 6000;
+    background-color:rgba(250, 248, 246); 
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.055);
+    width: 100%;
+    transition: all 2s ease-in-out;
+
+} */
+
+.other-part{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+.app-name{
+    font-size: 5rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Inter';
+    font-weight: 900;
+    color: rgb(0, 89, 255);
+    /* color: white; */
+    /* text-shadow: 5px 5px 1rem black; */
+    text-shadow: 
+        -1px -1px black,
+        1px -1px  black,
+        -1px 1px  black,
+        3px 3px  black;
+}
+.Icon{
+    display: flex;
+    gap: 5px;
+}
+
+.mark{
+    height: 3rem;
+    stroke:greenyellow;
+    stroke-width: 0.5rem;
+    background-color: white;
+    padding: 0.15rem 0.15rem;
+    border-radius: 1rem;
+    margin-top: 1rem;
+}
+
+.home-part, .menu-part, .home-part-themes, .menu-part-themes{
+    font-size: 2.4rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    color:rgb(3, 1, 88);
+    cursor: pointer;
+    transition: all 0.9s ease-in-out;
+    font-family: "Lato"
+}
+.home-part-themes, .menu-part-themes{
+    color:white;
+}
+
+.home-part:hover, .menu-part:hover,.home-part-themes:hover, .menu-part-themes:hover{
+    color: rgb(224, 146, 0);
+    transition: all 0.4s ease-in-out;
+}
+
+a{
+    text-decoration: none;
+    color:rgb(3, 1, 88);
+}
+
+
+.search-bar-title{
+    margin-right: 3rem;
+    border: none;
+    border: 2px solid rgb(3, 1, 88);
+    border-radius: 5px;
+    padding: 3px 0.5px;
+    font-size: 2rem;
+   
+}
+.searchBar{
+    position: relative;
+}
+.search-icon{
+    height: 2rem;
+    position: absolute;
+    transform: translate(-5.5rem, 0.5rem);
+    stroke: black;
+    border-radius: 5px;
+
+}
+*:focus{
+    border: 1px solid orange;
+    border-radius: 5px;
+    /* padding: 0.1rem 0.3rem; */
+    /* padding: inherit; */
+}
+
+.files{
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
+.right-files{
+    /* background-color: green; */
+    background-color: #f9f9f9;
+    background-image: url("https://www.transparenttextures.com/patterns/gplay.png");
+    margin-left:93%;
+    width: 100rem;
+
+    /* The height can be deleted any time */
+    /* height: 90vh; */
+    
+    padding-left: 1rem;
+    padding-top: 2rem;
+    margin-top: 6rem;
+    transition: all 0.5s ease-in-out;
+}
+
+/* -----------------------LEFT LANE----------------------- */
+.left-files{
+    /* background-color: brown; */
+    background-color: inherit;
+
+    overflow-y: auto;
+    height: 87.5vh;
+    position: relative;
+    padding:1rem 2rem 6rem 1rem;
+    position: fixed;
+    top:8rem;
+    z-index: 2000;
+    transition: all 0.9s ease-in-out;
+}
+
+
+
+.left--title{
+    font-size:2rem;
+    cursor: pointer;
+}
+
+.left-files h2{
+    font-size:1.8rem;
+}
+
+.all{
+    list-style: none;
+}
+
+.music{
+    cursor: pointer;
+}
+
+.searchedLinks{
+    cursor:pointer;
+}
+/* -------------Other Sport & Trending ----------*/
+.li{
+    font-weight:600;
+    line-height:2;
+    cursor: pointer;
+    
+}
+
+.ul-others {
+    max-height: 0;
+    list-style: none;
+    opacity: 0;
+    transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+}
+  
+
+  .ul-others.show {
+    max-height: 20rem; /* enough height for content */
+    opacity: 1;
+    line-height: 2;
+  }
+
+  .li-others ul{
+    list-style: none;
+    line-height: 2;
+  }
+  /* -------------------------------------- */
+
+
+
+.trending{
+    cursor:pointer;
+}
+
+/* -------BOOKMARK-------- */
+.bookMark{
+    line-height: 1.5;
+    padding-top: 0.3rem;
+    font-size: 1.3rem;
+}
+
+
+
+/* ------Region-------- */
+.select-bar{
+    width:19.5rem;
+    height:3rem;
+}
+
+.region{
+    padding-bottom:0.5rem;
+}
+
+/* --------Social Media-------- */
+.connect-link{
+    padding-top:0.5rem;
+    list-style:none;
+    line-height:1.5;
+}
+
+.ion-icon{
+    padding-right:1rem;
+}
+
+.twitter{
+    color:black;
+}
+.facebook{
+    color:blue;
+}
+.youtube{
+    color:red;
+}
+
+.social-links{
+    text-decoration: none;
+    color:black;
+}
+/* ---------------------------- */
+.weather{
+    display: flex;
+    gap: 0.6rem;
+}
+.weather-left{
+    font-size:1.2rem;
+    font-weight: 600;
+    width:20rem;
+}
+.img-weather{
+    height:3rem;
+    border:0.3px dashed black;
+    border-radius: 50%;
+    background-color: rgb(185, 185, 185);
+    transition: all 0.9s ease-in-out;
+}
+.img-weather:hover{
+    transform: scale(1.5);
+
+}
+
+
+/* -----Appearance ---------- */
+
+.appearance{
+    padding-bottom:0.5rem;
+    cursor:pointer;
+}
+
+.input-key{
+    margin-top:0.5rem;
+    margin-left:2rem;
+    transform:scale(1.5)
+}
+
+.dark-mode{
+    padding-left:1rem;
+    font-size:1.3rem;
+}
+
+.appearIcon{
+    height:2rem;
+    padding-top:0.9rem;
+    width:2rem;
+    stroke-width:0.8rem;
+}
+
+.appearIcon:hover{
+    stroke:grey;
+}
+
+.copyright{
+   padding-top: 2rem; 
+   transform: translateY(2rem);
+}
+
+/* ----------------Right Plane-------------------- */
+.section-title{
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+    font-size: 2.5rem;
+    font-family: 'poppins', 'tahoma';
+    font-weight: 700;
+}
+.st-1{
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    padding-bottom: 0;
+    border-top:6px double rgb(94, 94, 94);
+    border-bottom:6px double rgb(94, 94, 94);
+    margin-left:2rem;
+    margin-right:4rem;
+}
+
+.st-1:hover{
+    color: rgb(145, 145, 145);
+}
+/* --------No api---------- */
+.no-results{
+    font-size: 2.6rem;
+    font-weight: 800;
+    text-align: center;
+    /* border: 1px solid black; */
+    margin-left: auto;
+    margin-right: auto;
+    height: 87vh;
+    width: 30rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items:center;
+}
+
+.inner-no-results{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 1rem 1rem;
+}
+.no-results-sticker{
+    font-size: 6rem;
+}
+/* -------------------------- */
+
+/* -----------New Headline------------------- */
+.headline-page{
+    height: 70%vh;
+}
+
+.headLine--1{
+    width: 100%;
+}
+.headLine-pix{
+    height: 60%;
+    width: 80%;
+    border-radius: 1.3rem;
+    box-shadow: 0 0 0.2rem black;
+    opacity: 0.79;
+    margin: 0 auto;
+    display: block;
+}
+.news-tit{
+    font-size: 2rem;
+    font-family: 'poppins';
+    color: black;
+    margin-right:4rem;
+}
+
+.news-tit:hover{
+    text-decoration: underline;
+}
+.news--des {
+    font-size: 1.4rem;
+    font-family: 'poppins';
+    text-align: center;
+    padding-bottom: 2rem;
+    margin-right:4rem;
+    
+}
+.align{
+    text-align: center;
+}
+
+.heading-grid--1{
+    width: 98%;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    border-top: 2px solid rgb(122, 122, 122);
+    padding-top:2rem;
+}
+
+.headline--2-img{
+    width: 15rem;
+    height: 10rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 0.2rem black;
+}
+
+.headline--2-img:hover{
+    opacity: 0.7;
+}
+
+.heading--title{
+    margin: 0 0.5rem;
+    color: black;
+}
+
+.heading--title:hover{
+    text-decoration: underline;
+}
+
+.down{
+margin-top: 5rem;
+}
+
+.h-news-text{
+    margin-top: 2rem;
+    font-family: 'poppins';
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------- */
+.headLines{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap:10rem;
+    padding-right:2rem;
+    padding-left:3rem;
+}
+
+
+.news-feed{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap:3rem;
+    padding-right: 3rem;
+}
+.news-feed2{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-right: 1rem;
+    row-gap:3rem;
+}
+
+.sportsPart{
+    display:grid;
+    grid-template-columns:0.6fr 1.3fr 0.6fr;
+    column-gap:3rem;
+}
+
+
+
+/* -------------Filtered/Trending part */
+
+.trending-part{
+    height: 85vh;
+
+    margin-top: 0.5rem;
+}
+
+.hd-1{
+    display:flex;
+    padding-left:3rem;
+    padding-right:3rem;
+    gap:5rem;
+}
+
+
+.trending-img{
+    height: 100%;
+}
+
+.trending-txt{
+    /* background-color: blue; */
+    height: 100%;
+    padding: 0 2rem;
+    /* text-align: justify; */
+    /* align-self: center; */
+    margin-right: 5rem;
+    align-content: center;
+
+    
+}
+.ft-title{
+    font-size: 1.9rem;
+    margin-bottom: 1rem;
+}
+
+.ft-title:hover{
+    text-decoration: underline;
+}
+.ft-content{
+    font-size: 1.4rem;
+    text-align: justify;
+}
+
+.trending-date{
+    font-size: 1.2rem;
+}
+
+.trends--text{
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: 'poppins';
+    border-bottom: solid 0.2rem rgb(85, 85, 85);
+    margin-right:1rem;
+    margin-bottom: 1rem;
+}
+.trends-items{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap:1.5rem;
+    margin:0 1rem;
+    /* background-color: red; */
+
+}
+
+.tnews-img{
+    width: 15rem;
+    height: 10rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 0.2rem black;
+}
+
+.tnews-img:hover{
+    opacity:0.5 ;
+}
+
+.tnews-ptext{
+    font-size: 1.2rem;
+    width:16rem;
+    margin-bottom: 2.5rem;
+}
+
+.tnews-link{
+    color:black;
+}
+.tnews-ptext:hover{
+    text-decoration: underline;
+}
+
+.tags{
+    font-size: 1.3rem;
+    font-weight: 600;
+    font-style: oblique;
+    font-family: 'poppins';
+    /* color:#aaaaaa */
+    opacity: 0.2;
+    transition: all 0.4s ease-in-out;
+}
+
+.tags:hover{
+    opacity: 1;
+    transition: all 0.4s ease-in-out;
+}
+
+.taggs{
+    padding-left: 3rem;
+}
+
+.tagged{
+    border-right: solid 0.2rem rgb(179, 179, 179) ;
+    /* justify-self: flex-end; */
+    padding-left: 3rem;
+    transition: all 0.5s ease-in-out;
+
+}
+.tagged:hover{
+    border-right: solid 0.2rem rgb(17, 17, 17) ;
+    transition: all 0.5s ease-in-out;
+}
+
+.a-trends{
+    color: black;
+}
+/* ------------------------------------ */
+
+
+
+
+
+
+
+
+
+
+
+.hd-2{
+    display:grid;
+    grid-template-columns:1fr;
+    padding-left:1.6rem;
+    padding-right:1.6rem;
+    row-gap:3rem;
+     
+}
+
+.btn-table{
+    padding:0.7rem 0.7rem;
+    border:none;
+    font-family:'poppins';
+    font-weight:700;
+    border-radius:1rem;
+    cursor:pointer;
+    background-color:lightgreen;
+    margin-bottom:1rem;
+    margin-left:3rem;
+        
+}
+
+.league-tables{
+    display:grid;
+    grid-template-columns: 10% 26% 10% 10% 10% 10% 10% 10% 10%;
+    line-height:1.5;
+    font-size:1.2rem;
+    font-weight:600;
+}
+
+.table-heading{
+    font-size:1.4rem;
+    font-weight:600;
+    /* text-align:center; */
+    display:flex;
+    gap:10rem;
+    padding-bottom:1rem;
+}
+
+.table-text{
+    font-size:1.2rem;
+    font-weight:700;
+    font-family:'poppins';
+}
+
+.table-heading-year{
+    font-size:1.1rem;
+    align-self:center;
+}
+
+.blue-color{
+    background-color:rgba(0, 123, 255, 0.2);
+    
+}
+
+.red-color{
+    background-color:rgba(255, 0, 0, 0.15);
+}
+
+.yellow-color{
+    background-color:rgba(253, 187, 3);
+}
+
+.key-boxes{
+    display:flex;
+    justify-content:space-between;
+}
+
+.key-boxes p{
+    font-weight:700;
+    font-size:1.2rem;
+    padding-bottom:0.3rem;
+    padding-top:0.3rem;
+}
+
+.key-box{
+    height:2rem;
+    width:2rem;
+    margin-left:auto;
+    margin-right:auto;
+    /* border:1px solid black; */
+}
+
+.T-news{
+    display:flex;
+    justify-content:space-between;
+    padding-right:3rem;
+}
+
+.fixtures{
+    font-size: 2rem;
+    font-weight: 800;
+    font-family: 'poppins';
+}
+
+.fix-text{
+    font-size: 1.2rem;
+    padding-bottom: 2rem;
+}
+
+
+.img-GNews{
+    height:30rem;
+    width:40rem;
+    border-radius:2rem;
+    box-shadow:0 0 0.8rem 0.4rem rgba(10, 10, 10, 0.3);
+}
+
+.img-GNews:hover{
+    /* filter: blur(2px); */
+    opacity:0.85;
+}
+
+
+.title-GNews{
+    width:28rem;
+    text-align:justify;
+    font-size:1.3rem;
+    font-weight:700;
+    font-family:'poppins';
+    text-shadow:0 0 2rem grey;    
+}
+
+.more-news-text{
+    font-size:1.3rem;
+    font-weight:600;
+    font-family:'poppins';
+    text-shadow:0 0 2rem grey; 
+    line-height: 1.6;   
+}
+
+.title-GNews:hover{
+    text-decoration:underline;
+}
+
+.GNews-link{
+    padding-left:2rem;
+    color:rgb(28, 5, 238);
+    
+}
+
+.GNews-link:hover{
+    color:green;
+}
+
+.Gl{
+    font-size: 1.3rem;
+    font-family: 'poppins';
+    font-weight: 600;
+}
+
+.GL1{
+    padding-bottom: 3rem;
+}
+
+.source-text{
+    padding-left: 3rem;
+    color: rgb(85, 60, 2);
+}
+
+.pl-news{
+    font-size: 1.7rem;
+    font-family: 'poppins';
+    margin: 1.5rem 0;
+    font-weight: 800;
+    border-top: 3px double black;
+    border-bottom: 3px double black;
+}
+
+.img-league{
+    width: 2rem;
+    border-radius: 1rem;
+}
+
+.news-image{
+    height: 14rem;
+    width: 20rem;
+    border-radius: 10%;
+    margin-right: 3rem;
+    transition: all 0.6s ease-in-out;
+    /* align-self:center; */
+}
+
+.news-image:hover{
+    transform: scale(1.07);
+}
+
+.news-card{
+    display: flex;
+    flex-direction:column;
+
+}
+.news-title{
+    font-size: 1.6rem;
+    font-family: 'poppins';
+    line-height: 2.3rem;
+    padding-bottom: 1rem;
+    
+}
+.news-title:hover{
+    text-decoration: underline;
+}
+
+.news-description{
+    font-size: 1.5rem;
+    text-align:justify;
+}
+
+
+.Read-more{
+    font-size: 1.3rem;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+}
+
+.Read-more:hover{
+    color: green;
+    font-weight: 900;
+    font-size: 1.4rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.news-content{
+    flex: 1;
+}
+
+.date{
+    font-size:1.3rem;
+    font-weight:600;
+}
+
+.timeDate{
+    padding-top:0.5rem;
+    display:flex;
+    gap:2rem;
+    justify-content:left;
+}
+
+.videos{
+    margin-top:3rem;
+    display:flex;
+    gap:2rem;
+    justify-content:center;
+    background-color: rgb(177, 176, 176); 
+    width:100rem;
+}
+
+.iframe-videos{
+    align-self:center;
+    margin-left:0.5rem;
+}
+
+.iframe{
+    height:37rem;
+    width:75rem;
+}
+
+.video-img{
+    height:9rem;
+    cursor:pointer;
+}
+
+.allSubVideos{
+    margin-top:1rem;
+    height:40rem;
+    overflow:auto;
+    margin-right:0.7rem;
+}
+
+
+.allSubVideos::-webkit-scrollbar {
+    width: 10px; 
+    margin-left:10px;    
+  }
+  
+  .allSubVideos::-webkit-scrollbar-track {
+    background: #f0f0f0;      
+    border-radius: 10px;
+  }
+  
+  .allSubVideos::-webkit-scrollbar-thumb {
+    background-color: #888;    
+    border-radius: 10px;
+    border: 2px solid #f0f0f0;
+  }
+  
+  .allSubVideos::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
+  
+
+
+.title-details{
+    margin-top:1rem;
+    margin-bottom:1rem;
+    border-bottom:2px solid black;
+}
+
+
+/* ----------------------Music News---------------------------- */
+.music-part{
+    height: 85vh;
+    
+    /* background-color: blue; */
+
+    margin-top: 2rem;
+    border-top: 3px solid black; 
+    /* border-bottom: 3px solid black;  */
+}
+
+.music-header{
+    font-size: 2.4rem;
+    font-family: 'poppins';
+    font-weight: 700;
+    padding-left: 1rem;
+}
+
+
+
+.music-apis{
+    /* display: grid;
+    grid-template-columns: 70% 30%; */
+
+    display: flex;
+    margin-top: 0.8rem;
+    
+}
+
+.music-img{
+    height: 100%;
+    margin-left: 1rem;
+}
+
+.img-news{
+    height: 48rem;
+    width: 60rem;
+    /* object-fit: contain; */
+    border-radius: 10px;
+}
+
+.img-news:hover{
+    opacity: 0.70;
+}
+
+.music-txt{
+    /* background-color: blue; */
+    height: 100%;
+    padding: 0 2rem;
+    text-align: justify;
+    align-self: center;
+    margin-right: 5rem;
+
+    
+}
+
+.music-title{
+    font-size: 2rem;
+}
+
+.music-title:hover{
+    text-decoration: underline;
+}
+
+.music-content{
+    padding:1rem 0;
+    font-size: 1.4rem;
+}
+
+.music-link{
+    font-size: 1.4rem;
+    transition: all 0.6s ease-in-out;
+}
+
+.music-link:hover{
+    color: green;
+    font-weight: 700;
+    border: 2px solid black;
+    padding: 0.5rem 1rem;
+    transition: all 0.6s ease-in-out;
+}
+
+
+/* --------Others---------- */
+
+.music-others{
+    font-size: 1.8rem;
+    margin: 1rem 0;
+    padding-left: 2rem;
+}
+
+.music-flex{
+    display: flex;
+    gap: 4rem;
+    justify-content: space-around;
+    padding-bottom: 3rem;
+}
+
+.first-music{
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.second-music{
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.all-music-text{
+    width: 30rem;
+}
+
+.img-others-pix{
+    display: block;
+    height: 20rem;
+    width: 30rem;
+    margin: 0 auto;
+    margin-bottom: 1.3rem;
+    opacity: 0.8;
+    border-radius: 2rem;
+    box-shadow: 0 0 0.4rem black;
+}
+
+.music-title{
+    font-size: 1.8rem;
+    padding-bottom: 1rem;
+}
+
+.music-description{
+    font-size: 1.3rem;
+    padding-bottom: 1.2rem;
+}
